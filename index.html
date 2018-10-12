@@ -1,0 +1,9 @@
+<html>
+  <body>
+    <h1>blog list!</h1>
+    {{range .}}
+      <a href="/?name={{.File}}"><h2>{{.Title}} ({{.Auth}})</h2></a>
+      <p>{{.Summary}}</p>
+    {{end}}
+  </body>
+</html>
